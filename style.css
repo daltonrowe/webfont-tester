@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  background: salmon;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__inner {
+  max-width: 100%;
+  width: 620px;
+}
+
+.upload {
+  margin-bottom: 30px;
+}
+
+.upload__input {
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls__input--number {
+  width: 55px;
+}
+
+.samples {
+  font-size: 50px;
+  font-family: font-to-test;
+  word-wrap: break-word;
+}

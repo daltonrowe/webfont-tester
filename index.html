@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Simple Webfont Tester</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style id="font-stylesheet"></style>
+    <script src="font-test.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__inner">
+        <h1>Simple Webfont Tester</h1>
+
+        <div class="upload">
+          <input
+            type="file"
+            name="font-upload"
+            id="font-upload"
+            class="upload__input"
+          />
+
+          <div class="controls">
+            <div class="controls__group">
+              <label for="font-weight">font-weight</label>
+              <select name="font-weight" id="font-weight">
+                <option value="bold">bold</option>
+                <option value="normal">normal</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="800">800</option>
+                <option value="900">900</option>
+              </select>
+            </div>
+
+            <div class="controls__group">
+              <label for="font-style">font-style</label>
+              <select name="font-style" id="font-style">
+                <option value="normal">normal</option>
+                <option value="italic">italic</option>
+                <option value="oblique">oblique</option>
+              </select>
+            </div>
+
+            <div class="controls__group">
+              <label for="font-size">font-size</label>
+              <input
+                type="number"
+                name="font-size"
+                id="font-size"
+                value="50"
+                step="1"
+                class="controls__input controls__input--number"
+              />
+              <span>px</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="samples"
+          class="samples"
+          contenteditable="true"
+          spellcheck="false"
+        >
+          <div class="samples__item">ABCDEFGHIJKLMNOPQRTUVWXYZ</div>
+          <div class="samples__item">abcdefghijklmnopqrstuvwxyz</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
